@@ -23,7 +23,7 @@ export const menuItems: MenuProps['items'] = [
   ),
   getMenuItem(
     <NavLink to={'/estatisticas'}>ESTATÍSTICAS</NavLink>,
-    'estatistica',
+    'estatisticas',
     <BarChartOutlined style={{ fontSize: '1rem' }} />
   ),
   getMenuItem(
@@ -51,7 +51,7 @@ export const menuItems: MenuProps['items'] = [
   ),
   getMenuItem(
     <NavLink to={'/dashboard'}>PAINEL VISUAL</NavLink>,
-    'painel-visual',
+    'dashboard',
     <BarChartOutlined style={{ fontSize: '1rem' }} />
   ),
   getMenuItem(
