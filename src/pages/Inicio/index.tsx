@@ -1,6 +1,7 @@
 import { Button, Divider } from 'antd'
 import React, { useState } from 'react'
 import Modal from '../../components/Modal'
+import Card from '../../components/Card'
 
 const Inicio: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -37,6 +38,16 @@ const Inicio: React.FC = () => {
           onOk={handleOk}
           onCancel={handleCancel}
           showModal={isModalVisible}
+        />
+        <Card
+          loading={false}
+          title={
+            <>
+              <strong>Título do Card</strong>
+              <Divider />
+            </>
+          }
+          description='Descrição do Card'
         />
       </div>
     </div>
