@@ -9,7 +9,11 @@ const Pagination: React.FC<PaginationProps> = ({
   <PaginationComponent
     total={paginationList}
     showSizeChanger
-    showTotal={(total) => `Total de ${total} ${typeItems}`}
+    showTotal={(total) => (
+      <strong>
+        Total de {total} {typeItems}
+      </strong>
+    )}
   />
 )
 
