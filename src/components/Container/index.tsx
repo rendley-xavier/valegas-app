@@ -16,7 +16,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <SideBar collapsed={collapsed} />
-      <Layout style={{ backgroundColor: '#dcdcdc' }}>
+      <Layout style={{ backgroundColor: '#dcdcdc', overflow: 'auto' }}>
         <NavBar onToggleSidebar={toggleSidebar} />
         <div id='content'>{children}</div>
       </Layout>
