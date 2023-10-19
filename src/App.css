@@ -81,7 +81,6 @@ h2 {
   padding: 3rem;
   position: relative;
   overflow: hidden;
-  /* #f8f8f8 COR ANTERIOR*/
   background-color: #f1f1f1;
   flex: auto;
 }
@@ -218,8 +217,6 @@ h2 {
 .action-button > .anticon {
   line-height: 0;
 }
-
-/*Reset values antd*/
 
 .ant-layout-sider-trigger {
   background: var(--main-color-layout);
@@ -416,16 +413,12 @@ h6 {
   padding: 10px 10px;
 }
 
-
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: #fff;
-}
-
 .ant-menu-submenu-title:active {
   background: var(--second-bg-color);
 }
 
-.ant-menu-item a:hover {
+/* Altera a cor dos itens do sidemenu ao passar o mouse */
+.ant-menu-light .ant-menu-title-content:hover  {
   color: var(--main-color-layout);
 }
 
@@ -437,8 +430,15 @@ h6 {
   color: var(--main-color-layout);
 }
 
-.ant-menu-item-selected {
-  color: var(--main-color-layout);
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-selected .ant-menu-submenu-title {
+  color: #6fcbc0;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  color: #6fcbc0;
 }
 
 .ant-menu-item-selected a {
@@ -449,10 +449,6 @@ h6 {
   > .ant-menu-submenu-title
   > .ant-menu-submenu-expand-icon,
 .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
-  color: var(--main-color-layout);
-}
-
-.ant-menu-submenu-selected {
   color: var(--main-color-layout);
 }
 
