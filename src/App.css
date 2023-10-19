@@ -417,11 +417,6 @@ h6 {
   background: var(--second-bg-color);
 }
 
-/* Altera a cor dos itens do sidemenu ao passar o mouse */
-.ant-menu-light .ant-menu-title-content:hover  {
-  color: var(--main-color-layout);
-}
-
 .ant-menu-light .ant-menu-item:hover,
 .ant-menu-light .ant-menu-item-active,
 .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
@@ -430,38 +425,10 @@ h6 {
   color: var(--main-color-layout);
 }
 
-.ant-menu-light .ant-menu-item:hover,
 .ant-menu-light .ant-menu-item-active,
 .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
 .ant-menu-light .ant-menu-submenu-selected .ant-menu-submenu-title {
   color: #6fcbc0;
-}
-
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  color: #6fcbc0;
-}
-
-.ant-menu-item-selected a {
-  color: var(--main-color-layout);
-}
-
-.ant-menu-submenu:hover
-  > .ant-menu-submenu-title
-  > .ant-menu-submenu-expand-icon,
-.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
-  color: var(--main-color-layout);
-}
-
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: #f1f6fb;
-  border-right-color: #65ba8f;
-  border-right-width: 5px;
-  border-right: 3px solid #65ba8f;
-  color: #6fcbc0;
-
-  a {
-    color: #6fcbc0;
-  }
 }
 
 .ant-menu-item,
